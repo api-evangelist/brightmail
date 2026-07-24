@@ -1,7 +1,26 @@
 aid: brightmail
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brightmail.png
 name: Brightmail
-description: Brightmail is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Brightmail was an email anti-spam software company founded in 1998 by Sunil Paul, best
+  known for its network of "spam probe" honeypot email addresses that fed real-time anti-spam
+  filtering rules to enterprise mail servers. Symantec acquired Brightmail in 2004 for roughly $370
+  million, and the technology shipped for years as Symantec Brightmail AntiSpam and later Symantec
+  Mail Security; Symantec's enterprise security business was subsequently acquired by Broadcom in
+  2019. Brightmail today is a defunct brand with no independent developer program or public API
+  surface — www.brightmail.com redirects to broadcom.com and the brightmail.com apex domain no longer
+  resolves. This profile is retained for historical/network completeness rather than active API
+  enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/brightmail/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+x-status: defunct
+x-acquired-by: symantec
+x-acquired-year: 2004
 tags:
 - Company
+- Email
+- Anti-Spam
+- Email Security
+- Security
+- Messaging
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,8 @@ maintainers:
 common:
 - type: Website
   url: http://www.brightmail.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
